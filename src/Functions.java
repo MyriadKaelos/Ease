@@ -12,6 +12,7 @@ public class Functions extends JPanel implements MouseListener,KeyListener {
     int height;
     int res;
     Graphics2D g2d;
+    Timer t;
     public Functions(int width, int height, int res) {
         this.width = width;
         this.res = res;
@@ -62,17 +63,12 @@ public class Functions extends JPanel implements MouseListener,KeyListener {
 
     }
 
-
-    public void paintComponent(Graphics g) {
-        this.g2d = (Graphics2D)g;
-        super.paintComponent(g);  // paint background
-        setBackground(Color.WHITE);
-        Graphics2D g2d = (Graphics2D)g;
-        paintStuff(g2d);
+    public void paint() {
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setColor(Color.BLACK);
     }
-    public void paintStuff(Graphics2D g2d) {
 
-    }
     public void p(int x, int y, Color color) {
         g2d.setColor(color);
         g2d.fillRect(x*res,y*res,res,res);

@@ -1,0 +1,19 @@
+To do this, I'm going to need to understand inheritance properties pretty well.
+I'm gonna make a list of what I'm using.
+    JFrame
+    JTable
+    Functions
+    KeyListener
+    MouseListener
+    Timer/repeating functions.
+    A lot of inheritance.
+So, I really want to have a basic class which will show exactly how one would use my code.
+User will need to be able to...
+    Add keyListeners && mouseListeners which can...
+        take data from the keyboard at any moment.
+        Use data to use functions.
+        Use data to alter screen data/images.
+        change information.
+    Change what is shown on the screen.
+    ^^To do this, I'm gonna need paintStuff to activate on a timer.
+
